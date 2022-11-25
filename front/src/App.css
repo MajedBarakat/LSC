@@ -1,0 +1,31 @@
+.container {
+    width: 90%;
+  }
+
+  .App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #light {
+    background-color: #ffffff;
+  }
+  
+  #dark {
+    background-color: #000000;
+  }
+  
+  .switch label {
+    margin: 20px;
+  }
+  
+  #light .switch label {
+    color: black;
+  }
+  
+  #dark .switch label {
+    color: white;
+  }
