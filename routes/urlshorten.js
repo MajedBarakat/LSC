@@ -3,6 +3,7 @@ const validUrl = require('valid-url');
 const UrlShorten = mongoose.model('UrlShorten');
 const constants = require('../config/constants');
 const shortCode = require('../middlewares/uniqueUrlCode');
+const path = require("path");
 
 module.exports = app => {
   app.get('/api/item/:code', async (req, res) => {
@@ -62,4 +63,14 @@ module.exports = app => {
       return res.status(401).json('Invalid Original Url.');
     }
   });
+
+  // Serve static assets if in production
+  if (process.env.NODE_ENV === 'production') {
+    // Set static folder
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+  }
 };

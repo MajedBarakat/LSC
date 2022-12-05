@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js --ignore tests"
+    "server": "nodemon index.js --ignore tests",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front && npm run build --prefix front"
+
   },
-  "author": "",
+  "author": "Majed",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
