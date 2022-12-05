@@ -70,7 +70,8 @@ module.exports = app => {
     app.use(express.static('client/build'));
 
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+      console.log("we are here hellooosss")
+      res.sendFile(path.resolve(__dirname, 'front', 'build', 'index.html'));
     });
   }
 };
