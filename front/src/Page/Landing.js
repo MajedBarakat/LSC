@@ -11,7 +11,7 @@ class Landing extends Component {
       showShortenUrl: false,
       shortenUrl: "",
       originalUrl: "",
-      baseUrl: "",
+      baseUrl: "https://link-shortner2.herokuapp.com/",
       clickSubmit: true,
       showError: false,
       apiError: "",
