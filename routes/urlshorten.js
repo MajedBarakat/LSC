@@ -38,6 +38,7 @@ module.exports = app => {
     const queryOptions = { originalUrl };
     if (validUrl.isUri(originalUrl)) {
       let urlData;
+      
       try {
 
         if (!urlData) {
