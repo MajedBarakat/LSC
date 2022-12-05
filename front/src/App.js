@@ -5,26 +5,6 @@ import Landing from "./Page/Landing";
 import "./App.css";
 import ReactSwitch from "react-switch";
 
-
-// class App extends Component {
-//   componentDidMount() {}
-
-//   render() {
-//     return (
-//       <div className="container">
-//         <BrowserRouter>
-//           <div>
-//             <Header />
-//             <Routes>
-//               <Route path="/" element={<Landing/>} />
-//             </Routes>
-//           </div>
-//         </BrowserRouter>
-//       </div>
-//     );
-//   }
-// }
-
 export const ThemeContext = createContext(null);
 
 function App() {

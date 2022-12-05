@@ -102,6 +102,7 @@ class Landing extends Component {
           </a>
         </div>
         <input
+          className="color"
           name="originalUrl"
           field="originalUrl"
           placeholder="Paste your link.."

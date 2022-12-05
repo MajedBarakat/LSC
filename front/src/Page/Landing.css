@@ -23,4 +23,8 @@
   .shorten-error {
     margin-top: 20px;
     color: red;
-  }  
+  }
+
+  .color {
+    color: rgb(0, 0, 255);
+  }
