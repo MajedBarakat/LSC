@@ -72,7 +72,6 @@ module.exports = app => {
     app.use(express.static('front/build'));
 
     app.get('*', (req, res) => {
-      console.log("we are here hellooosss")
       res.sendFile(path.resolve(__dirname, 'front', 'build', 'index.html'));
     });
   }
